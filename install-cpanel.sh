@@ -5,5 +5,6 @@ cd /home
 
 # Download and install cPanel
 curl -o latest -L https://securedownloads.cpanel.net/latest
-sh latest
+sh latest >> var/log/installation.log
+tail -f installation.log
 
